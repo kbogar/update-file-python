@@ -17,3 +17,12 @@ In my algorithm, the **with** statement is used with the **.open()** function in
 The **with** keyword will help manage the resources by closing the file after exiting the **with** statement. In the code **with open(import_file, "r") as file:**, the **open()** function has two parameters. The first identifies the file to import, and then the second indicates what I want to do with the file. In this case, **"r"** indicates that I want to read it. 
 
 The code also uses the **as** keyword to assign a variable named **file**; **file** stores the output of the **.open()** function while I work within the **with** statement.
+
+## Read the file contents
+In order to read the file contents, I used the **.read()** method to convert it into the string.
+
+![](/docs/py3.png)
+
+When using an **.open()** function that includes the argument **"r"** for “read,” I can call the **.read()** function in the body of the **with** statement. The **.read()** method converts the file into a string and allows me to read it. I applied the **.read()** method to the **file** variable identified in the **with** statement. Then, I assigned the string output of this method to the variable **ip_addresses**.
+
+In summary, this code reads the contents of the **"allow_list.txt"** file into a string format that allows me to later use the string to organize and extract data in my Python program.
