@@ -26,3 +26,17 @@ In order to read the file contents, I used the **.read()** method to convert it 
 When using an **.open()** function that includes the argument **"r"** for “read,” I can call the **.read()** function in the body of the **with** statement. The **.read()** method converts the file into a string and allows me to read it. I applied the **.read()** method to the **file** variable identified in the **with** statement. Then, I assigned the string output of this method to the variable **ip_addresses**.
 
 In summary, this code reads the contents of the **"allow_list.txt"** file into a string format that allows me to later use the string to organize and extract data in my Python program.
+
+## Convert the string into a list
+To remove individual IP addresses from the allow list, I needed it to be in list format. Therefore, I used the **.split()** method to convert the **ip_addresses** string into a list:
+
+![](/docs/py4.png)
+
+The **.split()** function is used to convert a string into a list by splitting it at each whitespace by default. In this case, it splits the **ip_addresses** string into a list of individual IP addresses, making it easier to manage them. The resulting list is then reassigned back to the **ip_addresses** variable.
+
+## Iterate through the remove list
+A key part of my algorithm involves iterating through the IP addresses that are elements in the **remove_list**. To do this, I incorporated a **for** loop:
+
+![](/docs/py5.png)
+
+The **for** loop in Python repeats code for a specified sequence. The overall purpose of the **for** loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The **for** keyword starts the **for** loop. It is followed by the loop variable **element** and the keyword **in**. The keyword **in** indicates to iterate through the sequence **ip_addresses** and assign each value to the loop variable **element**.
